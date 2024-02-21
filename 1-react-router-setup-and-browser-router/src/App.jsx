@@ -1,8 +1,6 @@
 import React from "react"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 
-import Home from "./views/Home"
-
 export default function App() {
    return (
       <BrowserRouter>
@@ -16,4 +14,12 @@ export default function App() {
          </Routes>
       </BrowserRouter>
    )
+}
+
+function Home() {
+   return <h1>Hello, React Router!</h1>
+}
+
+function About() {
+   return <div>About page goes here!</div>
 }
